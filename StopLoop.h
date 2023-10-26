@@ -16,6 +16,9 @@ class StopLoop
     void stopFunction();
     void begin();
 
+  private:
+    bool created;
+
 };
 
 #endif

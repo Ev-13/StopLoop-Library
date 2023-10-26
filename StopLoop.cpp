@@ -4,6 +4,7 @@
 
 StopLoop::StopLoop()
 {
+  created = true;
 }
   
 // PUBLIC FUNCTIONS
