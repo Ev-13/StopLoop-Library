@@ -12,13 +12,9 @@ class StopLoop
 {
   // user-accessible "public" interface
   public:
-    StopLoop(int baudRate);
+    StopLoop();
     void stopFunction();
     void begin();
-  
-  private:
-    bool called;
-    int baud;
 
 };
 

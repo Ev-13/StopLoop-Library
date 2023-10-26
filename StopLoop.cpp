@@ -2,10 +2,8 @@
 #include "StopLoop.h"
 
 
-StopLoop::StopLoop(int baudRate)
+StopLoop::StopLoop()
 {
-  baud = baudRate;
-  called = false;
 }
   
 // PUBLIC FUNCTIONS
@@ -18,7 +16,6 @@ void StopLoop::begin()
 void StopLoop::stopFunction()
 {
   if(Serial.available()){
-    called = true;
     Serial.println("Stopping");
     while(1){
       ;
