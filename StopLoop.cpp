@@ -18,7 +18,8 @@ void StopLoop::stopFunction()
 {
   if(Serial.available()){
     Serial.println("Stopping");
-    while(1){
+    Serial.flush();
+    while(!Serial.available()){
       ;
     }
   }
