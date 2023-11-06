@@ -13,8 +13,8 @@ class StopLoop
   // user-accessible "public" interface
   public:
     StopLoop();
-    void stopFunction();
     void begin();
+    void stopFunction();
 
   private:
     bool created;

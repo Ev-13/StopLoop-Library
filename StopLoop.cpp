@@ -16,11 +16,13 @@ void StopLoop::begin()
 
 void StopLoop::stopFunction()
 {
-  if(Serial.available()){
+  if(Serial.available()){ //pause the loop() if input is detected in the Serial port
     Serial.println("Stopping");
-    Serial.flush();
-    while(Serial.available()) Serial.read();
-    while(!Serial.available()){
+
+    Serial.flush();  //flush the Serial port
+    while(Serial.available()) Serial.read();  //if there's anything left in the Serial port then read it away
+
+    while(!Serial.available()){  //wait until input is detected in the Serial port again
       ;
     }
   }
