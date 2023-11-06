@@ -1,13 +1,14 @@
 #include <Arduino.h>
 #include "StopLoop.h"
 
-
+//CONSTRUCTOR
 StopLoop::StopLoop()
 {
   created = true;
 }
   
 // PUBLIC FUNCTIONS
+
 void StopLoop::begin()
 {
   Serial.println("Stopping Function available.");
