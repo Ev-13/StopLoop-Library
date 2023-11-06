@@ -5,7 +5,6 @@
 #ifndef StopLoop_h
 #define StopLoop_h
 
-#include <Time.h>
 
 // library interface description
 class StopLoop
